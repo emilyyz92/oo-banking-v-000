@@ -1,5 +1,6 @@
 class BankAccount
-attr_accessor :name, :balance, :status
+attr_accessor :balance, :status
+attr_reader :name
 
 @@all = []
   def initialize(account_name)
