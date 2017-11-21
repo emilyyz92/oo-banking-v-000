@@ -26,6 +26,7 @@ attr_accessor :sender, :receiver, :status, :amount
       if @amount>@sender.balance
         return "Transaction rejected. Please check your account balance."
         @status = "rejected"
+        binding.pry
       else
         @receiver.balance += @amount
         @sender.balance -= @amount
