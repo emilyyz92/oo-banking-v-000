@@ -23,7 +23,6 @@ attr_accessor :sender, :receiver, :status, :amount
   end
 
   def execute_transaction
-    binding.pry
     if self.valid?
       if @amount>@sender.balance
         return "Transaction rejected. Please check your account balance."
