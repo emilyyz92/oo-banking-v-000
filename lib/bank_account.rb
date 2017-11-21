@@ -13,4 +13,7 @@ attr_reader :name
   def self.all
     @@all
   end
+
+  def display_balance
+    return "Your balance is $#{self.balance}."
 end
