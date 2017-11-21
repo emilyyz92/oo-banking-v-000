@@ -8,7 +8,7 @@ attr_accessor :sender, :receiver, :status, :amount
     @receiver = receiver
     @status = pending
     @amount = amount
-    
+
   end
 
   def valid?
@@ -20,5 +20,5 @@ attr_accessor :sender, :receiver, :status, :amount
       return false
     end
   end
-      
+
 end
