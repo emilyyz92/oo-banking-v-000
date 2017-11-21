@@ -14,7 +14,7 @@ attr_accessor :sender, :receiver, :status, :amount
   def valid?
     if BankAccount.all.include?(self)
       return true
-    elsif @sender.valid? && @receive.valid?
+    elsif BankAccount.all.find{|account|account == sender}.valid? && BankAccount.all.find{|account|account == @receiver}.valid?
       return true
     else
       return false
