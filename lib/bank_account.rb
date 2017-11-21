@@ -1,8 +1,8 @@
 class BankAccount
 attr_accessor :balance, :status
 attr_reader :name
-
 @@all = []
+
   def initialize(account_name)
     @name = account_name
     @@all<<self
