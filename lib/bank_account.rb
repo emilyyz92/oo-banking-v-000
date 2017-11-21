@@ -5,6 +5,8 @@ attr_accessor :name
   def initialize(account_name)
     @name = account_name
     @@all<<self
+    @balance = 1000
+    @status = "open"
   end
 
   def self.all
