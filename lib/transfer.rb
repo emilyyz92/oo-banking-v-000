@@ -8,12 +8,17 @@ attr_accessor :sender, :receiver, :status, :amount
     @receiver = receiver
     @status = pending
     @amount = amount
+    
   end
 
   def valid?
     if BankAccount.all.include?(self)
       return true
-    elsif 
-      
+    elsif BankAccount.all.include?(self.sender) && BankAccount.all.include?(self.receiver)
+      return true
+    else
+      return false
+    end
+  end
       
 end
