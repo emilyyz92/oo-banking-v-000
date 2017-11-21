@@ -18,6 +18,10 @@ attr_reader :name
     return "Your balance is $#{self.balance}."
   end
 
+  def deposit(amount)
+    @balance = @balance + 1000
+  end
+
   def valid?
     @status=="open" && @balance>0
   end
