@@ -19,7 +19,7 @@ attr_reader :name
   end
 
   def deposit(amount)
-    @balance = @balance + 1000
+    @balance = @balance + amount
   end
 
   def valid?
